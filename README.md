@@ -11,6 +11,6 @@ Here are the data for the project:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip  
 
 This repository contains the following 
-   1.	a codebook (which describes the usability of the data and conceptualization of the data obtainment and transformational steps in generating tidy data), 
+   1.	a codebook (which describes the procedure in reproducibility of the data and conceptualization of the data obtainment and transformation in generating tidy data), 
    2.	an R script called “run_analysis” (embedded the codes in conformity to the instructional guidance in the course project), 
    3.	a data file titled “tidy_data” (contains the output content following the transformation of the raw data), and this “readme file” (explains the description of the       repository). 
