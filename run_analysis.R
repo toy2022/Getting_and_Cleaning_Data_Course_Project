@@ -18,18 +18,16 @@ library(knitr)
 
 # locate the storage directory and download the dataset
 # a. default pathway
-setwd ("C:/Users/tyeabah/Documents/Coursera")
+setwd ("C:/Users/tyeabah/Documents/Coursera/final/Getting_and_Cleaning_Data_Course_Project")
 
-# b. create directory, get dataset and unzip
-dir.create("myproject")
+# b. get dataset and unzip
 
 filelinked <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(filelinked, destfile = "./myproject/accelerometers.zip")
-unzip(zipfile = "./myproject/accelerometers.zip", exdir = "./myproject")
+download.file(filelinked, destfile = "./accelerometers.zip")
+unzip("accelerometers.zip")
 
 # c. get file pathway
-file.path("./myproject", "UCI HAR Dataset")
-setwd ("C:/Users/tyeabah/Documents/Coursera/myproject")
+file.path("./UCI HAR Dataset")
 
 # d. read in the data
 activities <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("code", "activity"))
